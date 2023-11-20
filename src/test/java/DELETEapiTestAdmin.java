@@ -20,7 +20,7 @@ public class DELETEapiTestAdmin {
     void deleteExistingBook(){
         Response response = given()
                 .when()
-                .delete("/api/books/4"); // Replace 4 with the actual book id you want to delete
+                .delete("/api/books/1"); // Replace 4 with the actual book id you want to delete
 
         int statusCode = response.getStatusCode();
         assertEquals(200, statusCode, "Expected status code 200");
